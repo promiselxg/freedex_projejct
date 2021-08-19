@@ -113,6 +113,10 @@
           </div>
         </div>
       </div>
+      <video class="video-bg" autoplay muted loop>
+        <source src="video/People Staying Indoors.mp4" type="video/mp4" />
+        <source src="video/People Staying Indoors.mp4" type="video/webm" />
+      </video>
     </header>
     <!--- header-area end-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
