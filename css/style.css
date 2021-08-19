@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background: #000000 url('../image/image.jpg') no-repeat fixed 50% ;
+  background-size: cover;
+}
+
+::selection {
+  color: white;
+  background: orange !important;
+}
+
+::-webkit-selection {
+  color: white;
+  background: orange !important;
+}
+
+::-moz-selection {
+  color: white;
+  background: orange !important;
+}
+
+/*you can increase or decrease width in this class*/
+.video-main-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.auto-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+/*you can increase or decrease width in this class*/
+
+/*header css start
+font-family: 'Sansita', sans-serif;
+*/
+header {
+  display: flex;
+  width: 100%;
+}
+.logo-outer {
+  width: 100%;
+  display: flex;
+  text-align: left;
+}
+.logo-outer h2 {
+  color: #fff;
+  margin-left:-10px;
+  font-size: 30px;
+  display:flex;
+  text-transform: capitalize;
+}
+.logo-outer p{
+	color:#fff;
+	font-size:12px;
+	margin-top:2px;
+	margin-left:38px;
+	letter-spacing:1px;
+	font-style: italic;
+}
+.logo-outer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-outer img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+  /*border-radius: 50%;*/
+}
+
+/*new-h part start*/
+.new-h {
+  padding-bottom: 10px;
+}
+.new-h h2 {
+  font-family: "Dela Gothic One", cursive;
+  color: #fff;
+  font-size: 33px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 34px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*You can adjust logo position using this class*/
+.header-content-outer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.heading {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__content {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.header-content-rightbar {
+  width: 100%;
+  flex: 0.5;
+  text-align: left;
+  margin-top: 19px;
+}
+.header-content-leftbar {
+  width: 100%;
+  flex: 0.45;
+  margin-top: 25px;
+}
+.header-content-leftbar iframe {
+  width: 100%;
+  height: 276px;
+ 
+}
+
+.header-content-rightbar h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.item-a1 {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
+
+.header-content-rightbar .name-field {
+  border: 1px solid #6b6b6b;
+  background: #fff;
+  padding: 13px 12px;
+  float: left;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  color: #8e8e8e;
+  margin: 5px 0px;
+}
+.form__name {
+  width: 100% !important;
+  display: flex;
+}
+.form__name > .fname:nth-child(2) {
+  margin-left: 5px;
+}
+
+.header-content-rightbar .name-field:focus {
+  outline-color: #00cc66;
+}
+
+.header-content-rightbar .message-send {
+  border: none;
+  background: #0c6;
+  padding: 13px 12px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 5px;
+}
+
+.header-content-rightbar .message-send:hover {
+  background: #ffc000;
+}
+
+.header-content-rightbar form {
+  width: 100%;
+  float: left;
+  margin: 10px 0 0;
+}
+.video-bg {
+  object-fit: cover;
+  z-index: -1;
+  float: left;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-main-outer {
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px 0 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.opacity-outer {
+  background: #000000ba;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vw;
+  top: 0;
+}
+
+.footer-area {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1169px) {
+  .video-bg {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .opacity-outer {
+    position: fixed;
+  }
+  .header-content-leftbar iframe {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .form__name {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__name > .fname:nth-child(2) {
+    margin-left: 0px;
+  }
+  .header-content-leftbar {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo-outer {
+    display: grid;
+    text-align: center;
+  }
+ 
+ .logo__text{
+	 display:flex;
+	 flex-direction:column;
+	 align-items:center;
+ }
+  .logo-outer img {
+    width: 88px;
+    height: 88px;
+	margin-left:10px;
+  }
+  .auto-container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .heading {
+    margin-top: 20px;
+    margin-bottom: -30px;
+  }
+  .header__content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .header-content-rightbar {
+    text-align: center;
+  }
+  .header-content-leftbar {
+    margin-top: 50px;
+  }
+  .header-content-leftbar iframe {
+    height: 300px;
+  }
+  .form__name {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__name > .fname:nth-child(2) {
+    margin-left: 0px;
+  }
+  .footer-area {
+    margin: 20px 0px;
+  }
+  .footer-area p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .video-bg {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .opacity-outer {
+    position: fixed;
+  }
+}
+@media screen and (max-height: 700px) {
+  .auto-container {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .heading {
+    font-size: 24px;
+  }
+
+
+  .header-content-rightbar h2 {
+    font-size: 16px;
+  }
+  .header-content-rightbar p {
+    font-size: 11px;
+  }
+}
